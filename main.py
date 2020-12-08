@@ -1,21 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Version 0.1
+# Version 0.2
 # Sergei Gabrielov
 # 12/5/2020
 
 import networkx as nx
 from algorithms import prims_algorithm
-from functions import V, E
 
-graph_data = open('test-graphs/g3.txt', 'r')
+# TODO
+# Ask the user for input, which graph do they want to run, do they want to
+# show plot or show cost
+
+graph_data = open('test-graphs/g4.txt', 'r')
 G = nx.read_weighted_edgelist(graph_data, nodetype = int)
-T = prims_algorithm(G, 11)
-
-print(f'The vertex set of G is V(G) = {V(G)}')
-print(f'The edge set of G is E(G) = {E(G)}')
-
-print('')
-
-print(f'The vertex set of T is V(T) = {V(T)}')
-print(f'The edge set of T is E(T) = {E(T)}')
+T = prims_algorithm(G, 3, show_graph = True, show_cost = True)
