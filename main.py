@@ -26,10 +26,6 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 # regex
 import re
 
-# TODO
-# Ask the user for input, which graph do they want to run, do they want to
-# show plot or show 
-
 def main():
     # Declare sentinel values
     choice = -1
