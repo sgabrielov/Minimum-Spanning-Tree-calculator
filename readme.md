@@ -4,6 +4,7 @@ Sergei Gabrielov
 
 
 This project uses Prim's Algorithm to calculate the minimum spanning tree (MST) for a given undirected graph.
+___________
 
 Changelog:
 
@@ -14,7 +15,6 @@ Added main.py - Menu driven primary end user file.
 Modified algorithms.py to add cost to subtree edges
 
 
-
 0.2
 
 Added drawing.py
@@ -23,7 +23,6 @@ Added test-graphs/g4.txt
 
 Modified algorithms.py to add plot drawing and cost calculating functionality
 
-
 0.1 
 
 Added algorithms.py
@@ -31,14 +30,18 @@ Added algorithms.py
 Added functions.py
 
 
+___________
 
 How to use:
+
+
 
 Using main.py
 
 
 Prepare a text file that contains a weighted edgelist for an undirected graph. Included are g#.txt example files in test-graphs/
 
+___________
 General format for edgelist:
 
 1 2 3
@@ -49,7 +52,7 @@ General format for edgelist:
 Each line represents an edge with vertices v1, v2 and cost c
 
 v1 v2 c
-
+___________
 
 Program options:
 
