@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Version 0.3
+# Version 1.0
 # Sergei Gabrielov
-# 12/5/2020
+# 12/13/2020
 
 import networkx as nx
 from algorithms import prims_algorithm
