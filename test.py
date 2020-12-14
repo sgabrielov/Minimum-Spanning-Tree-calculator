@@ -5,11 +5,9 @@ from functions import *
 from drawing import *
 from algorithms import prims_algorithm
 
-graph_data = open('test-graphs/g2.txt', 'r')
+import re
 
-G = nx.read_weighted_edgelist(graph_data, nodetype = int)
-
-T = prims_algorithm(G, 1)
-
-
-draw_subtree(G,T)
+graph_file = 'C:/test/path/to/file.txt'
+graph_file = re.search("[ \w-]+?(?=\.)", graph_file).group()
+outfile = 'test-graphs/trees/' + graph_file + '.txt'
+print("Save output tree to " + outfile)

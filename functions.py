@@ -1,22 +1,63 @@
 # -*- coding: utf-8 -*-
 
-# Version 0.2
+# Version 0.3
 # Sergei Gabrielov
 # 12/5/2020
 
 import networkx as nx
 
 def V(graph):
-    """Returns a set of all vertices present in the inputted graph."""
+    """Returns a set of all vertices present in the inputted graph.
+    
+    Parameters
+    ----------
+    graph : networkx.classes.graph.Graph type
+        An undirected graph
+        
+    Returns
+    -------
+    set
+        A set of vertices in graph
+    
+    """
+    
     return set(graph.nodes())
 
 
 def E(graph):
-    """Returns a list of all edges present in the inputted graph."""
+    """Returns a list of all edges present in the inputted graph.
+    
+    Parameters
+    ----------
+    graph : networkx.classes.graph.Graph type
+        An undirected graph
+        
+    Returns
+    -------
+    list
+        A set of edges in graph
+        
+    """
+    
     return list(graph.edges())
 
 def W(graph, e):
-    """Returns the weight or cost of edge e in the inputted graph."""
+    """Returns the weight or cost of edge e in the inputted graph.
+    
+     Parameters
+    ----------
+    graph : networkx.classes.graph.Graph type
+        An undirected graph
+    e : tuple
+        An edge in graph
+        
+    Returns
+    -------
+    float
+        The weight of edge e in graph
+        
+    """
+    
     return graph[e[0]][e[1]]['weight']
 
 def prims_initialize(graph, v):

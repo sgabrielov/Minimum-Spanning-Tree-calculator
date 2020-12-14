@@ -8,7 +8,7 @@ Original Author: Dr. Randy Davila
 
 import networkx as nx
 import matplotlib.pyplot as plt
-#import numpy as np
+import numpy as np
 
 def show_weighted_graph(G):
     pos = nx.planar_layout(G)
